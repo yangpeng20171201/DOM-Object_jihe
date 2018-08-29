@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06改变链接的target属性.html</title>
+</head>
+
+<body>
+    <script>
+        // _blank -- 在新窗口中打开链接
+        function changeTarget() {
+            document.getElementById('runoob').target = "_blank";
+        }
+    </script>
+    <a id="runoob" href="//www.runoob.com">访问菜鸟教程</a>
+    <br><br>
+    <input type="button" onclick="changeTarget()" value="修改target">
+    <p>尝试在你单击按钮之前点击的链接。</p>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>获得下拉列表表单的ID</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <select id="mySelect">
+  <option>苹果</option>
+  <option>梨子</option>
+  <option>香蕉</option>
+  <option>橙子</option>
+</select>
+    </form>
+    <p>form的ID为：
+        <script>
+            document.write(document.getElementById("mySelect").form.id);
+        </script>
+    </p>
+
+</body>
+
+</html>

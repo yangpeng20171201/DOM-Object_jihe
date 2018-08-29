@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>改变下拉菜单中被选项的文本</title>
+    <script>
+        function changeText() {
+            var x = document.getElementById("mySelect");
+            x.options[x.selectedIndex].text = "甜瓜";
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        选择你最喜欢的水果:
+        <select id="mySelect">
+  <option>苹果</option>
+  <option>橙子</option>
+  <option>菠萝</option>
+  <option>香蕉</option>
+</select>
+        <br><br>
+        <input type="button" onclick="changeText()" value="设置你的选项">
+    </form>
+
+</body>
+
+</html>

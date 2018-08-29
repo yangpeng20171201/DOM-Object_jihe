@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在下拉列表中选择多个选项</title>
+</head>
+<script>
+    function selectMultiple() {
+        document.getElementById("mySelect").multiple = true;
+    }
+</script>
+
+<body>
+    <form>
+        <select id="mySelect" size="4">
+    <option>苹果</option>
+    <option>梨子</option>
+    <option>香蕉</option>
+    <option>橙子</option>
+    </select>
+        <input type="button" onclick="selectMultiple()" value="选择多个">
+    </form>
+    <p>在你点击“选择多个”按钮之前,尽量选择一个以上的选项(通过按下shift或Ctrl键)。然后尝试点击“选择多个”按钮。</p>
+
+
+</body>
+
+</html>

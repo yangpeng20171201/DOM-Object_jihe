@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>改变单元格横跨的列数</title>
+    <script>
+        function setColSpan() {
+            var x = document.getElementById('myTable').rows[0].cells;
+            x[0].colSpan = "2";
+            x[1].colSpan = "6";
+        }
+    </script>
+</head>
+
+<body>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td colspan="4">单元格 1</td>
+            <td colspan="4">单元格 2</td>
+        </tr>
+        <tr>
+            <td>单元格 3</td>
+            <td>单元格 4</td>
+            <td>单元格 5</td>
+            <td>单元格 6</td>
+            <td>单元格 7</td>
+            <td>单元格 8</td>
+            <td>单元格 9</td>
+            <td>单元格 10</td>
+        </tr>
+    </table>
+    <form>
+        <input type="button" onclick="setColSpan()" value="修改合并列">
+    </form>
+
+</body>
+
+</html>

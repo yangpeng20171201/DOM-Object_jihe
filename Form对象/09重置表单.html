@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>重置表单</title>
+    <script>
+        function formReset() {
+            document.getElementById("frm1").reset();
+        }
+    </script>
+</head>
+
+<body>
+
+    <p>在下面的输入框中输入一些文本,然后按下“重置表单”按钮重置表单。</p>
+    <form id="frm1">
+        第一个名称: <input type="text" name="fname"><br> 最后一个名称: <input type="text" name="lname"><br><br>
+        <input type="button" onclick="formReset()" value="重置表单">
+    </form>
+</body>
+
+</html>

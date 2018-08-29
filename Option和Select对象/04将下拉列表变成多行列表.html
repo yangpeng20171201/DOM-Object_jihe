@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>将下拉列表转换为多行列表</title>
+    <script>
+        function changeSize() {
+            document.getElementById("mySelect").size = 4;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <select id="mySelect">
+<option>苹果</option>
+<option>香蕉</option>
+<option>橙子</option>
+<option>甜瓜</option>
+</select>
+        <input type="button" onclick="changeSize()" value="修改列表大小">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04返回表单中的enctype属性的值</title>
+</head>
+
+<body>
+    <form id="frm1" enctype="text/plain">
+        第一个名字: <input type="text" name="fname" value="Donald"><br> 第二个名字: <input type="text" name="lname" value="Duck"><br>
+    </form>
+    <p>表单数据将被编码为：
+        <script>
+            document.write(document.getElementById("frm1").enctype);
+        </script>
+    </p>
+
+</body>
+
+</html>ujhhuukyjuy \

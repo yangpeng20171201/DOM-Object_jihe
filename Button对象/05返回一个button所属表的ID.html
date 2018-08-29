@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回一个button所属表的ID</title>
+</head>
+
+<body>
+
+    <form id="form1">
+        <button id="button1" type="button">点我!</button>
+    </form>
+    <p>含有按钮的表单的ID:
+        <script>
+            document.write(document.getElementById("button1").form.id);
+        </script>
+    </p>
+</body>
+
+</html>

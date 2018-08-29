@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回一个锚的名字</title>
+</head>
+
+<body>
+
+    <p><a href="#C6">参见第6章</a></p>
+    <h2>第1章</h2>
+    <p>这一章解释了 ba bla bla</p>
+    <h2>第2章</h2>
+    <p>这一章解释了 ba bla bla</p>
+    <h2>第3章</h2>
+    <p>这一章解释了 ba bla bla</p>
+    <h2>第4章</h2>
+    <p>这一章解释了 ba bla bla</p>
+    <h2>第5章</h2>
+    <p>这一章解释了 ba bla bla</p>
+    <h2><a id="c6" name="C6">第6章</a></h2>
+    <p>这一章解释了 ba bla bla</p>
+    <script>
+        document.write("返回锚: ");
+        document.write(document.getElementById("c6").name);
+    </script>
+</body>
+
+</html>

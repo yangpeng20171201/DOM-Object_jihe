@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回文档中第一个图像的id</title>
+</head>
+
+<body>
+    <img id="img1" border="0" src="../Document对象/img/10540ac3-3.jpg" width="150" height="113">
+    <img id="img2" border="0" src="../Document对象/img/22-160R4152450946.jpg" width="150" height="113">
+    <img id="img3" border="0" src="../Document对象/img/543c9fb2082b2.jpg" width="150" height="113">
+    <p>第一张图像的id是:
+        <script>
+            document.write(document.images[0].id);
+        </script>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一个单元格的innerHTML</title>
+    <script>
+        function cell() {
+            var x = document.getElementById('myTable').rows[0].cells;
+            alert(x[0].innerHTML);
+        }
+    </script>
+</head>
+
+<body>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td>单元格 1</td>
+            <td>单元格 2</td>
+        </tr>
+        <tr>
+            <td>单元格 3</td>
+            <td>单元格 4</td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" onclick="cell()" value="第一个单元格">
+
+</body>
+
+</html>

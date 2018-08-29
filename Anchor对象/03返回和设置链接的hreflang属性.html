@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03返回和设置链接的hreflang属性</title>
+</head>
+
+<body>
+    <a id="runoob" hreflang="zh-cn" href="http://www.runoob.com/">菜鸟教程</a><br>
+    <script>
+        document.write("返回链接的hreflang: ");
+        document.write(document.getElementById('runoob').hreflang);
+        document.write("<br><br>");
+    </script>
+    <a id="google" href="http://www.google.com/">Google</a><br>
+    <script>
+        document.getElementById('google').hreflang = "no";
+        document.write("设置链接的hreflang: ");
+        document.write(document.getElementById('google').hreflang);
+    </script>
+
+</body>
+
+</html>

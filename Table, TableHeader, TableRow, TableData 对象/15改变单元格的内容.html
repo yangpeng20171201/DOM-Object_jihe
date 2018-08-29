@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>改变单元格的内容</title>
+    <script>
+        function changeContent() {
+            var x = document.getElementById('myTable').rows[0].cells;
+            x[0].innerHTML = "新内容";
+        }
+    </script>
+</head>
+
+<body>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td>行1 列1</td>
+            <td>行1 列2</td>
+        </tr>
+        <tr>
+            <td>行2 列1</td>
+            <td>行2 列2</td>
+        </tr>
+        <tr>
+            <td>行3 列1</td>
+            <td>行3 列2</td>
+        </tr>
+    </table>
+    <form>
+        <input type="button" onclick="changeContent()" value="修改内容">
+    </form>
+
+</html>

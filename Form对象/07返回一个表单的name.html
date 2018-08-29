@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回一个表单的name</title>
+</head>
+
+<body>
+    <form id="frm1" name="form1">
+        第一个名称: <input type="text" name="fname" value="Donald"><br> 第二个名称: <input type="text" name="lname" value="Duck"><br>
+    </form>
+    <p>表单名称为:
+        <script>
+            document.write(document.getElementById("frm1").name);
+        </script>
+    </p>
+</body>
+
+</html>

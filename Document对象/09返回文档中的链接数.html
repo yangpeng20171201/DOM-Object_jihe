@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回文档中的链接数</title>
+</head>
+
+<body>
+    <img src="http://www.runoob.com/try/demo_source/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap">
+    <area shape="rect" coords="0,0,82,126" href="http://www.runoob.com/try/demo_source/sun.htm" alt="Sun">
+    <area shape="circle" coords="90,58,3" href="http://www.runoob.com/try/demo_source/mercur.htm" alt="Mercury">
+    <area shape="circle" coords="124,58,8" href="http://www.runoob.com/try/demo_source/venus.htm" alt="Venus">
+    </map>
+    <p><a href="/js/">JavaScript 教程</a></p>
+    <p>链接/地址数目:
+        <script>
+            // document.write(document.links[0].id);       返回第一个链接的id
+            document.write(document.links.length);
+        </script>
+    </p>
+</body>
+
+</html>

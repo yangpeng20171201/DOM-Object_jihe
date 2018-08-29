@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="frm1" action="demo-form.php">
+        第一个名字: <input type="text" name="fname" value="Donald"><br> 最后一个名字: <input type="text" name="lname" value="Duck"><br>
+        <input type="submit" value="提交">
+    </form>
+    <p>action属性的值为：
+        <script>
+            document.write(document.getElementById("frm1").action);
+        </script>
+    </p>
+</body>
+
+</html>

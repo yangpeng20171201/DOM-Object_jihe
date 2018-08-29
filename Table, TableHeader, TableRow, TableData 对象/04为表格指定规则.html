@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function rowRules() {
+            document.getElementById('myTable').rules = "rows";
+        }
+
+        function colRules() {
+            document.getElementById('myTable').rules = "cols";
+        }
+    </script>
+</head>
+
+<body>
+
+    <table id="myTable" border="1">
+        <tr>
+            <td>行1 列1</td>
+            <td>行1 列2</td>
+        </tr>
+        <tr>
+            <td>行2 列1</td>
+            <td>行2 列2</td>
+        </tr>
+        <tr>
+            <td>行3 列1</td>
+            <td>行3 列2</td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" onclick="rowRules()" value="只显示行边框">
+    <input type="button" onclick="colRules()" value="至显示列边框">
+</body>
+
+</html>

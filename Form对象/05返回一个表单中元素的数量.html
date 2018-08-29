@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05返回一个表单中元素的数量</title>
+</head>
+
+<body>
+    <form id="frm1" action="demo-form.php">
+        第一个名称: <input type="text" name="fname" value="Donald"><br> 第二个名称: <input type="text" name="lname" value="Duck"><br>
+        <input type="submit" value="提交">
+    </form>
+    <p>"frm1"元素的数量为:
+        <script>
+            document.write(document.getElementById("frm1").length);
+        </script>
+    </p>
+</body>
+
+</html>

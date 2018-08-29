@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>当点击完button不可用</title>
+</head>
+
+<body>
+    <form>
+        按钮:
+        <input type="button" id="firstbtn" value="OK">
+        <input type="button" id="secondbtn" value="OK">
+    </form>
+    <p>点击下面的按钮取消上面的第一个按钮。</p>
+    <button onclick="disableElement()">取消按钮</button>
+    <script>
+        function disableElement() {
+            document.getElementById("firstbtn").disabled = true;
+        }
+    </script>
+</body>
+
+</html>

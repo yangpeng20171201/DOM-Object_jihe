@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>删除下拉菜单中的被选项</title>
+    <script>
+        function removeOption() {
+            var x = document.getElementById("mySelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <select id="mySelect">
+  <option>苹果</option>
+  <option>梨子</option>
+  <option>香蕉</option>
+  <option>橙子</option>
+</select>
+        <input type="button" onclick="removeOption()" value="移除你的选项">
+    </form>
+
+</body>
+
+</html>

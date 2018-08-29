@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>向流中输入文本</title>
+</head>
+
+<body>
+    <script>
+        function createDoc() {
+            var doc = document.open("text/html", "replace");
+            var txt = "<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body></html>";
+            doc.write(txt);
+            doc.close();
+        }
+    </script>
+    </head>
+
+    <body>
+        <input type="button" value="新文档" onclick="createDoc()">
+    </body>
+
+</html>

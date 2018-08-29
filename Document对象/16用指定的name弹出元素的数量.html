@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用指定的Name弹出元素的数量</title>
+</head>
+
+<body>
+    <script>
+        function getElements() {
+            var x = document.getElementsByName("x");
+            alert(x.length);
+        }
+    </script>
+    </head>
+
+    <body>
+
+        猫:
+        <input name="x" type="radio" value="猫"> 狗:
+        <input name="x" type="radio" value="狗">
+        <input type="button" onclick="getElements()" value="多少名称为 'x'的元素?">
+
+    </body>
+
+</html>

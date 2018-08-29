@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单元格内容垂直对齐</title>
+    <script>
+        function topAlign() {
+            document.getElementById('tr2').vAlign = "top";
+        }
+    </script>
+</head>
+
+<body>
+
+    <table width="50%" border="1">
+        <tr id="tr1">
+            <th>第一名字</th>
+            <th>下一个名字</th>
+            <th>文本</th>
+        </tr>
+        <tr id="tr2">
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>你好，我的名字叫Peter Griffin. 需要长文本来演示这个例子。 需要长文本来演示这个例子。
+            </td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" onclick="topAlign()" value="垂直对齐" />
+
+
+</body>
+
+</html>

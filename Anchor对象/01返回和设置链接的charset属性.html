@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01返回和设置链接的charset属性</title>
+</head>
+
+<body>
+    <a id="runoob" charset="ISO-8859-1" href="//www.runoob.com/">菜鸟教程</a><br>
+    <script>
+        document.write("返回链接的charset: ");
+        document.write(document.getElementById('runoob').charset);
+        document.write("<br><br>");
+    </script>
+    <a id="google" href="//www.google.com/">Google</a><br>
+    <script>
+        document.getElementById('google').charset = "utf-8";
+        document.write("设置链接的charset: ");
+        document.write(document.getElementById('google').charset);
+    </script>
+</body>
+
+</html>

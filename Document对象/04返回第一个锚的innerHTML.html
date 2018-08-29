@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04返回第一个锚的innerHTML</title>
+</head>
+
+<body>
+    <a name="html">HTML 知识</a>
+    <a name="css">CSS 知识</a>
+    <a name="xml">XML 知识</a>
+    <a href="/js/">javascript 知识</a>
+    <p>锚的数量：
+        <script>
+            document.write(document.anchors[0].innerHTML);
+        </script>
+    </p>
+</body>
+
+</html>
